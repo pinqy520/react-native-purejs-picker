@@ -8,7 +8,8 @@ import {
 	Image,
 	Dimensions,
 	PixelRatio,
-	PanResponder
+    PanResponder,
+    LayoutAnimation
 } from 'react-native';
 
 class PickerAndroidItem extends Component{
@@ -49,7 +50,8 @@ export default class PickerAndroid extends Component{
 	}
 
 	componentWillReceiveProps(nextProps){
-		this.setState(this._stateFromProps(nextProps));
+        this.setState(this._stateFromProps(nextProps));
+        LayoutAnimation.easeInEaseOut(void 0)
 	}
 
 	shouldComponentUpdate(nextProps, nextState, context){
