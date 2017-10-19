@@ -24,14 +24,14 @@ const shortSide = width > height ? height : width;
 export default class PickerAny extends Component {
 
 	static propTypes = {
-		style: View.propTypes.style,
+		// style: View.propTypes.style,
 		pickerElevation: PropTypes.number,
 		pickerBtnText: PropTypes.string,
 		pickerCancelBtnText: PropTypes.string,
 		pickerBtnStyle: Text.propTypes.style,
 		pickerTitle: PropTypes.string,
 		pickerTitleStyle: Text.propTypes.style,
-		pickerToolBarStyle: View.propTypes.style,
+		// pickerToolBarStyle: View.propTypes.style,
 		showMask: PropTypes.bool,
 		showDuration: PropTypes.number,
 		pickerData: PropTypes.any.isRequired,
