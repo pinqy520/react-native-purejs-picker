@@ -210,7 +210,7 @@ export default class PickerAndroid extends Component{
 		//but PickerIOS only passed value, so we set label to be the second argument
 		//add by zooble @2015-12-10
 		var curItem = this.state.items[this.index];
-		this.state.onValueChange && this.state.onValueChange(curItem.value, curItem.label);
+		curItem && this.state.onValueChange && this.state.onValueChange(curItem.value, curItem.label);
 	}
 
 	render(){
